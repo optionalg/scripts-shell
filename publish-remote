@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+function parse_git_branch {
+  ref=$(git-symbolic-ref HEAD 2> /dev/null) || return
+  echo ${ref#refs/heads/}
+}
+BRANCHNAME=`parse_git_branch`
+git push
+git config branch.$BRANCHNAME.remote origin
+git config branch.$BRANCHNAME.merge refs/heads/$BRANCHNAME
