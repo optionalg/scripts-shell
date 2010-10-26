@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [ $# -ne 1 ]; then
+         echo 1>&2 Usage: $0 file_name.js
+         exit 127
+fi
+java -jar /home/cmilfont/dev/rhino1_7R2/js.jar -version 170 $1
