@@ -1,0 +1,6 @@
+#!/bin/sh -x
+
+git ls-remote --heads origin
+git remote show origin
+git status
+
