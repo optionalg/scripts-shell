@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 #ferramentas para o rvm
-sudo apt-get install sed grep tar curl
-sudo apt-get install zlibc zlib1g zlib1g-dev zlib-bin ssh perl openssl subversion libcurl3 expat
-sudo apt-get install git libxml2 libxml2-dev ruby-dev libxslt1-dev
-sudo apt-get install mysql-server libmysqlclient-dev imagemagick librmagick-ruby libmagick++3 libgraphicsmagick3 libgraphicsmagick1-dev libmagick++-3 libpng3
-sudo apt-get install libopenssl-ruby libssl-dev libssl0.9.8
-sudo apt-get install libreadline5-dev
+sudo apt-get --force-yes install sed grep tar curl
+sudo apt-get --force-yes install zlibc zlib1g zlib1g-dev zlib-bin ssh perl openssl subversion libcurl3 expat
+sudo apt-get --force-yes install git libxml2 libxml2-dev ruby-dev libxslt1-dev
+sudo apt-get --force-yes install mysql-server libmysqlclient-dev imagemagick librmagick-ruby libmagick++3 libgraphicsmagick3 libgraphicsmagick1-dev libmagick++-3 libpng3
+sudo apt-get --force-yes install libopenssl-ruby libssl-dev libssl0.9.8
+sudo apt-get --force-yes install libreadline5-dev
 
 sudo ./install-system-wide
 
@@ -21,9 +21,9 @@ sudo ./install-system-wide
 
 # Install some rubies
 #source "$HOME/.rvm/scripts/rvm"
-rvm install 1.8.7
+sudo rvm install 1.8.7
 #rvm use 1.8.7
-rvm rubygems 1.3.7
+sudo rvm rubygems 1.3.7
 sudo rvm --default 1.8.7
 
 # install gems from Cordel App
