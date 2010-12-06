@@ -2,14 +2,11 @@
 
 #ferramentas para o rvm
 sudo apt-get install sed grep tar curl
-
-#para o git
 sudo apt-get install zlibc zlib1g zlib1g-dev zlib-bin ssh perl openssl subversion libcurl3 expat
-
-sudo apt-get install git libxml2 libxml2-dev ruby-dev libxslt1-dev #rubygems1.8
-sudo apt-get install mysql-server libmysqlclient-dev imagemagick librmagick-ruby libmagick++3 libgraphicsmagick3 libgraphicsmagick1-dev libmagick++-3
-
+sudo apt-get install git libxml2 libxml2-dev ruby-dev libxslt1-dev
+sudo apt-get install mysql-server libmysqlclient-dev imagemagick librmagick-ruby libmagick++3 libgraphicsmagick3 libgraphicsmagick1-dev libmagick++-3 libpng3
 sudo apt-get install libopenssl-ruby libssl-dev libssl0.9.8
+sudo apt-get install libreadline5-dev
 
 sudo ./install-system-wide
 
