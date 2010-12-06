@@ -22,7 +22,7 @@ sudo ./install-system-wide
 # Install some rubies
 #source "$HOME/.rvm/scripts/rvm"
 sudo rvm install 1.8.7
-#rvm use 1.8.7
+sudo rvm use 1.8.7
 sudo rvm rubygems 1.3.7
 sudo rvm --default 1.8.7
 
