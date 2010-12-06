@@ -11,25 +11,28 @@ sudo apt-get install mysql-server libmysqlclient-dev imagemagick librmagick-ruby
 
 sudo apt-get install libopenssl-ruby libssl-dev libssl0.9.8
 
+sudo ./install-system-wide
+
 # Install RVM
-cd ~/
-mkdir -p ~/.rvm/src/
-cd ~/.rvm/src 
-rm -rf ./rvm/ 
-git clone --depth 1 git://github.com/wayneeseguin/rvm.git 
-cd rvm 
-./install
+#cd ~/
+#mkdir -p ~/.rvm/src/
+#cd ~/.rvm/src
+#rm -rf ./rvm/
+#git clone --depth 1 git://github.com/wayneeseguin/rvm.git
+#cd rvm
+#./install
 
 # Install some rubies
-source "$HOME/.rvm/scripts/rvm"
-rvm install 1.8.7
-rvm use 1.8.7
-rvm rubygems 1.3.7
+#source "$HOME/.rvm/scripts/rvm"
+#rvm install 1.8.7
+#rvm use 1.8.7
+#rvm rubygems 1.3.7
 
 # install gems from Cordel App
-mkdir ~/dev
-cd ~/dev
-git clone git@github.com:cmilfont/rr10-team-116.git
-gem install bundler
-cd rr10-team-116
-bundle install
+#mkdir ~/dev
+#cd ~/dev
+#git clone git@github.com:cmilfont/rr10-team-116.git
+#gem install bundler
+#cd rr10-team-116
+#bundle install
+
