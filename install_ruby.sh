@@ -24,9 +24,10 @@ sudo ./install-system-wide
 
 # Install some rubies
 #source "$HOME/.rvm/scripts/rvm"
-#rvm install 1.8.7
+rvm install 1.8.7
 #rvm use 1.8.7
-#rvm rubygems 1.3.7
+rvm rubygems 1.3.7
+sudo rvm --default 1.8.7
 
 # install gems from Cordel App
 #mkdir ~/dev
