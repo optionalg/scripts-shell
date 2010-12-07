@@ -11,7 +11,7 @@ server {
 
     location / {
         #all requests are sent to the UNIX socket
-        #proxy_pass http://localhost:80;
+        proxy_pass http://n1r;
         proxy_redirect off;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
