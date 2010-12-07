@@ -26,6 +26,8 @@ sudo rvm use 1.8.7
 sudo rvm rubygems 1.3.7
 sudo rvm --default 1.8.7
 
+echo "source /usr/local/lib/rvm" >> ~/.bashrc
+
 # install gems from Cordel App
 #mkdir ~/dev
 #cd ~/dev
