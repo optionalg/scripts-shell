@@ -1,11 +1,32 @@
 #!/usr/bin/env bash
 
 #ferramentas para o rvm
-sudo apt-get --force-yes install sed grep tar curl
-sudo apt-get --force-yes install zlibc zlib1g zlib1g-dev zlib-bin ssh perl openssl subversion libcurl3 expat
-sudo apt-get --force-yes install git libxml2 libxml2-dev ruby-dev libxslt1-dev
-sudo apt-get --force-yes install mysql-server libmysqlclient-dev imagemagick librmagick-ruby libmagick++3 libgraphicsmagick3 libgraphicsmagick1-dev libmagick++-3 libpng3
-sudo apt-get --force-yes install libopenssl-ruby libssl-dev libssl0.9.8
+sudo apt-get --force-yes install sed grep tar curl ssh perl
+sudo apt-get --force-yes install zlibc
+sudo apt-get --force-yes install zlib1g
+sudo apt-get --force-yes install zlib1g-dev
+sudo apt-get --force-yes install zlib-bin
+sudo apt-get --force-yes install openssl
+sudo apt-get --force-yes install subversion
+sudo apt-get --force-yes install libcurl3
+sudo apt-get --force-yes install expat
+sudo apt-get --force-yes install git
+sudo apt-get --force-yes install libxml2
+sudo apt-get --force-yes install libxml2-dev
+sudo apt-get --force-yes install ruby-dev
+sudo apt-get --force-yes install libxslt1-dev
+sudo apt-get --force-yes install mysql-server
+sudo apt-get --force-yes install libmysqlclient-dev
+sudo apt-get --force-yes install imagemagick
+sudo apt-get --force-yes install librmagick-ruby
+sudo apt-get --force-yes install libmagick++3
+sudo apt-get --force-yes install libgraphicsmagick3
+sudo apt-get --force-yes install libgraphicsmagick1-dev
+sudo apt-get --force-yes install libmagick++-3
+sudo apt-get --force-yes install libpng3
+sudo apt-get --force-yes install libopenssl-ruby
+sudo apt-get --force-yes install libssl-dev
+sudo apt-get --force-yes install libssl0.9.8
 sudo apt-get --force-yes install libreadline5-dev
 
 sudo ./install-system-wide
