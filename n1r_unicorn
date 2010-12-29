@@ -18,7 +18,7 @@ set -e
 
 # Change these to match your app:
 APP_NAME=n1r
-USER_HOME=/home/cmilfont
+USER_HOME=/home/web
 APP_ROOT="$USER_HOME/$APP_NAME/current"
 PID="$USER_HOME/$APP_NAME/shared/pids/unicorn.pid"
 ENV=production
