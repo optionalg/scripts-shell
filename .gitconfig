@@ -1,0 +1,25 @@
+[user]
+	name = cmilfont
+	email = cmilfont@gmail.com
+[color]
+        ui=true
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+        whitespace = red reverse
+[core]
+        whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
+[alias]
+        lg = log --graph --pretty=format:'%Cred%h - %Cblue %s %Cgreen(%cr - %cD)%Creset - %an - %ae - %Cred%H' --abbrev-commit --date=relative
+        cp = log -p HEAD..origin/master
+        list = log --name-only --pretty=format:"" HEAD..origin/master
