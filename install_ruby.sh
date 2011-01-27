@@ -32,12 +32,12 @@ sudo apt-get -y install libreadline5-dev
 
 # Install RVM
 #cd ~/
-#mkdir -p ~/.rvm/src/
-#cd ~/.rvm/src
+mkdir -p ~/.rvm/src/
+cd ~/.rvm/src
 #rm -rf ./rvm/
-#git clone --depth 1 git://github.com/wayneeseguin/rvm.git
-#cd rvm
-#./install
+git clone --depth 1 git://github.com/wayneeseguin/rvm.git
+cd rvm
+./install
 
 # Install some rubies
 #source "$HOME/.rvm/scripts/rvm"
@@ -45,8 +45,9 @@ sudo rvm install 1.8.7
 sudo rvm use 1.8.7
 sudo rvm rubygems 1.3.7
 sudo rvm --default 1.8.7
+gem update --system
 
-echo "source /usr/local/lib/rvm" >> ~/.bashrc
+#echo "source /usr/local/lib/rvm" >> ~/.bashrc
 
 # install gems from Cordel App
 #mkdir ~/dev
