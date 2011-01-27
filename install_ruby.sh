@@ -1,35 +1,34 @@
 #!/usr/bin/env bash
 
 #ferramentas para o rvm
-sudo apt-get --force-yes install sed grep tar curl ssh perl
-sudo apt-get --force-yes install zlibc
-sudo apt-get --force-yes install zlib1g
-sudo apt-get --force-yes install zlib1g-dev
-sudo apt-get --force-yes install zlib-bin
-sudo apt-get --force-yes install openssl
-sudo apt-get --force-yes install subversion
-sudo apt-get --force-yes install libcurl3
-sudo apt-get --force-yes install expat
-sudo apt-get --force-yes install git
-sudo apt-get --force-yes install libxml2
-sudo apt-get --force-yes install libxml2-dev
-sudo apt-get --force-yes install ruby-dev
-sudo apt-get --force-yes install libxslt1-dev
-sudo apt-get --force-yes install mysql-server
-sudo apt-get --force-yes install libmysqlclient-dev
-sudo apt-get --force-yes install imagemagick
-sudo apt-get --force-yes install librmagick-ruby
-sudo apt-get --force-yes install libmagick++3
-sudo apt-get --force-yes install libgraphicsmagick3
-sudo apt-get --force-yes install libgraphicsmagick1-dev
-sudo apt-get --force-yes install libmagick++-3
-sudo apt-get --force-yes install libpng3
-sudo apt-get --force-yes install libopenssl-ruby
-sudo apt-get --force-yes install libssl-dev
-sudo apt-get --force-yes install libssl0.9.8
-sudo apt-get --force-yes install libreadline5-dev
+sudo apt-get -y install sed grep tar curl ssh perl
+sudo apt-get -y install zlibc
+sudo apt-get -y install zlib1g
+sudo apt-get -y install zlib1g-dev
+sudo apt-get -y install zlib-bin
+sudo apt-get -y install openssl
+sudo apt-get -y install libcurl3
+sudo apt-get -y install expat
+sudo apt-get -y install git
+sudo apt-get -y install libxml2
+sudo apt-get -y install libxml2-dev
+sudo apt-get -y install ruby-dev
+sudo apt-get -y install libxslt1-dev
+sudo apt-get -y install mysql-server
+sudo apt-get -y install libmysqlclient-dev
+sudo apt-get -y install imagemagick
+sudo apt-get -y install librmagick-ruby
+sudo apt-get -y install libmagick++3
+sudo apt-get -y install libgraphicsmagick3
+sudo apt-get -y install libgraphicsmagick1-dev
+sudo apt-get -y install libmagick++-3
+sudo apt-get -y install libpng3
+sudo apt-get -y install libopenssl-ruby
+sudo apt-get -y install libssl-dev
+sudo apt-get -y install libssl0.9.8
+sudo apt-get -y install libreadline5-dev
 
-sudo ./install-system-wide
+#sudo ./install-system-wide
 
 # Install RVM
 #cd ~/
