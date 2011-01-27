@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #ferramentas para o rvm
-sudo apt-get -y install sed grep tar curl ssh perl
+sudo apt-get -y install sed grep tar curl ssh perl g++
 sudo apt-get -y install zlibc
 sudo apt-get -y install zlib1g
 sudo apt-get -y install zlib1g-dev
