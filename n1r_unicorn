@@ -17,17 +17,17 @@ set -u
 set -e
 
 # Change these to match your app:
-APP_NAME=n1r
-USER_HOME=/home/web
-APP_ROOT="$USER_HOME/$APP_NAME/current"
-PID="$USER_HOME/$APP_NAME/shared/pids/unicorn.pid"
+APP_NAME=pacioli
+USER_HOME=/root/produtos
+APP_ROOT="$USER_HOME/$APP_NAME"
+PID="$USER_HOME/$APP_NAME/pids/unicorn.pid"
 ENV=production
 
-GEM_HOME="$USER_HOME/.rvm/gems/ruby-1.8.7-p302"
+#GEM_HOME="$USER_HOME/.rvm/gems/ruby-1.8.7-p302"
 
 UNICORN_OPTS="-D -E $ENV -c $APP_ROOT/unicorn.rb"
 
-SET_PATH="cd $APP_ROOT; rvm use 1.8.7; export GEM_HOME=$GEM_HOME"
+SET_PATH="cd $APP_ROOT; rvm use 1.8.7; 
 CMD="$SET_PATH; $GEM_HOME/bin/unicorn $UNICORN_OPTS"
 
 old_pid="$PID.oldbin"
