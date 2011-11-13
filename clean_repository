@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Reseting git repository"
+git reset --hard HEAD^
+git clean -f
+git merge origin/master
