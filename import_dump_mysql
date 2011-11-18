@@ -1,4 +1,7 @@
 #!/bin/sh -x
 DATABASE=$1
 FILE=$2
+USERNAME=root
+PASSWORD=root
+#mysqldump -u$USERNAME -p$PASSWORD --add-drop-table --no-data $DATABASE | grep ^DROP | mysql -u$USERNAME -p$PASSWORD $DATABASE
 mysql -v -h localhost -u root -proot $DATABASE < $FILE
