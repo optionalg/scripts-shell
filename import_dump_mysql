@@ -1,0 +1,4 @@
+#!/bin/sh -x
+DATABASE=$1
+FILE=$2
+mysql -v -h localhost -u root -proot $DATABASE < $FILE
