@@ -1,0 +1,2 @@
+#!/bin/sh -x
+cat /proc/cpuinfo | grep processor | wc -l
