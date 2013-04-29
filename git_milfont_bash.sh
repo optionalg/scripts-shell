@@ -28,9 +28,9 @@ function color_prompt
 
   local black="\[\033[0;30m\]"
   local dark_gray="\[\033[1;30m\]"
-  local blue="\[\033[0;34m\]"
+  local blue="\[\033[1;32m\]"
   local light_blue="\[\033[1;34m\]"
-  local green="\[\033[0;32m\]"
+  local green="\[\033[1;32m\]"
   local light_green="\[\033[1;32m\]"
   local cyan="\[\033[0;36m\]"
   local light_cyan="\[\033[1;36m\]"
@@ -52,7 +52,7 @@ function color_prompt
     local u_color=$yellow
   fi
 
-  PS1="$light_blue> $current_tty $u_color\u$brown@${purple}\
+  PS1="$cyan> $current_tty $u_color\u$brown@${purple}\
     \h$brown:$light_blue\w\n$light_blue> $light_red\$\
     ? $cyan\$(git_prompt)$brown"'\$'"$none "
 
@@ -146,7 +146,7 @@ function setps1 {
     local CLEAR="\[\033[0m\]"
     local STY_COLOR='\[\033[1;37;41m\]'
     local PROMPT_COLOR='\[\033[1;94m\]'
-    local USER_HOST_COLOR='\[\033[1;30m\]'
+    local USER_HOST_COLOR='\[\033[1;32m\]'
     local PROMPT_DIR_COLOR='\[\033[1;94m\]'
     local GIT_LEADER_COLOR='\[\033[1;30m\]'
     local GIT_BRANCH_COLOR=$CLEAR'\[\033[1;90m\]\[\033[4;90m\]'
