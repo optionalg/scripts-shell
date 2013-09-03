@@ -4,4 +4,5 @@ FILE=$2
 USERNAME=root
 PASSWORD=root
 #mysqldump -u$USERNAME -p$PASSWORD --add-drop-table --no-data $DATABASE | grep ^DROP | mysql -u$USERNAME -p$PASSWORD $DATABASE
-mysql -v -h localhost -u root -proot $DATABASE < $FILE
+#mysql -v -h localhost -u root -proot $DATABASE < $FILE
+mysql --max_allowed_packet=110M -v -h localhost -u root -proot $DATABASE < $FILE
